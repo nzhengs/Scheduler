@@ -1,24 +1,23 @@
-import React from 'react';
+import React, {Component} from 'react';
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Nav from "./components/navbar/nav"
+import TableList from "./components/table/table"
+import Container from "react-bootstrap/Container";
+import FormDetail from "./components/FormDetail/form.js"
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    return <div className="App">
+        <Nav/>
+        <br/>
+
+        <TableList/>
+        <FormDetail/>
+
+
     </div>
-  );
 }
 
 export default App;
