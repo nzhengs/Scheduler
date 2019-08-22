@@ -18,6 +18,15 @@ public class Employee {
     private String state;
     private String zip;
     private Gender gender;
+    private String phone;
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
     public Long getId() {
         return id;
