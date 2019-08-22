@@ -1,9 +1,11 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
-import "../FormDetail/style.css"
+import "../table/style.css"
+import Container from "react-bootstrap/Container";
 
 function TableList() {
     return (
+        <Container>
         <Table striped bordered hover className="form-font">
             <thead>
             <tr>
@@ -18,8 +20,7 @@ function TableList() {
                 <th>City</th>
                 <th>State</th>
                 <th>Zip</th>
-                <th>Last Name</th>
-                <th>Username</th>
+
             </tr>
             </thead>
             <tbody>
@@ -35,12 +36,12 @@ function TableList() {
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
+
             </tr>
 
             </tbody>
         </Table>
+        </Container>
     )
 
 }

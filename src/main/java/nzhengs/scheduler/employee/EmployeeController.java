@@ -22,8 +22,10 @@ public class EmployeeController {
     Employee createEmployee(@RequestBody Employee employee) {
         return employeeRepo.save(employee);
     }
+
     @PutMapping(path = "/employees/{id}")
     Employee updateEmployee(@PathVariable Long id, @RequestBody Employee employee) {
+        employee.setId(id);
         return employeeRepo.save(employee);
     }
 
