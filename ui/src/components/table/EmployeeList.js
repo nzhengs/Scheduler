@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Table from "react-bootstrap/Table";
 import "./EmployeeList.css"
 import Container from "react-bootstrap/Container";
@@ -9,7 +9,9 @@ function EmployeeList() {
 
     const [employees, setEmployees] = useState([]);
 
-    function getEmployees() {
+    useEffect(populateEmployees, []);
+
+    function populateEmployees() {
         const url = "http://localhost:8080/employees";
         fetch(url)
             .then(res => res.json())
@@ -20,7 +22,7 @@ function EmployeeList() {
     return (
         <Container>
             <Table striped bordered hover className="form-font">
-                <thead onClick={getEmployees}>
+                <thead onClick={populateEmployees}>
                 <tr>
                     <th>id</th>
                     <th>First Name</th>
