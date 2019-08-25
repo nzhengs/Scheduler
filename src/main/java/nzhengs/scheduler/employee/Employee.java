@@ -13,6 +13,7 @@ public class Employee {
     private String middleName;
     private String lastName;
     private String address1;
+    private String city;
     private String address2;
     private String state;
     private String zip;
