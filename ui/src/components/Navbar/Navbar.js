@@ -1,9 +1,9 @@
 import React from "react";
 import logo from "./logo1.png"
-import "./style.css"
+import "./Navbar.css"
 
 
-function Nav() {
+function Navbar() {
     return  (
         <nav className="navbar navbar-expand-lg navbar-light static-top nav-background">
             <a className="navbar-brand">
@@ -41,4 +41,4 @@ function Nav() {
 
 
 }
-export default Nav;
+export default Navbar;
