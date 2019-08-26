@@ -3,6 +3,7 @@ import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
+import "./RegistrationForm.css"
 
 function FormDetail() {
     const defaultEmployee = {
@@ -63,10 +64,10 @@ function FormDetail() {
 
     return (
         <Container className="employee-form">
-            <h3>Employees registration form</h3>
+            <h3 className="text-center p-4">Employees registration form</h3>
             <hr/>
             <Form onSubmit={onFormSubmit}>
-                <Form.Row>
+                <Form.Row className="p-2">
                     <Form.Group as={Col} controlId="firstName">
                         <Form.Label>First Name</Form.Label>
                         <Form.Control type="text"
@@ -95,7 +96,7 @@ function FormDetail() {
                         />
                     </Form.Group>
                 </Form.Row>
-                <Form.Row>
+                <Form.Row className="p-2">
                     <Form.Group as={Col} controlId="gender">
                         <Form.Label>Gender</Form.Label>
                         {
@@ -136,7 +137,7 @@ function FormDetail() {
 
                 </Form.Row>
 
-                <Form.Row>
+                <Form.Row className="p-2">
                     <Form.Group as={Col} controlId="address2">
                         <Form.Label>Address 2</Form.Label>
                         <Form.Control type="text" placeholder="Apartment, studio, or floor"
@@ -177,7 +178,7 @@ function FormDetail() {
                 </Form.Row>
 
 
-                <Button variant="primary" type="submit">
+                <Button variant="secondary" type="submit" className={"float-right"}>
                     Submit
                 </Button>
             </Form>

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import Table from "react-bootstrap/Table";
 import "./EmployeeList.css"
 import Container from "react-bootstrap/Container";
+import Card from "react-bootstrap/Card";
 
 
 function EmployeeList() {
@@ -21,6 +22,11 @@ function EmployeeList() {
 
     return (
         <Container>
+            <Card>
+                <Card.Header className="text-center">
+                    Employees Information Detail
+            </Card.Header>
+            </Card>
             <Table striped bordered hover className="form-font">
                 <thead onClick={populateEmployees}>
                 <tr>
