@@ -1,1 +1,2 @@
-rootProject.name = 'scheduler'
+rootProject.name = "Scheduler"
+include "api", "ui"
