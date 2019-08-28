@@ -1,0 +1,19 @@
+
+.description {
+    color: #194569;
+    font-family: Paprika, cursive;
+}
+
+.welcome-header {
+    color: #113049;
+    font-size: 30px;
+    margin: auto;
+    background-color: #e9ecef;
+}
+
+.functionality-description {
+    background-color: #e9ecef;
+    text-align: center;
+    display: inline-block;
+}
+
