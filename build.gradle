@@ -1,17 +1,30 @@
-project(":api") {
-    apply plugin: "java"
+plugins {
+    id "org.springframework.boot" version "2.1.6.RELEASE"
+    id "java"
+}
 
-    dependencies {
-        runtimeOnly(project(":ui"))
-    }
+apply plugin: "io.spring.dependency-management"
 
-    processResources.dependsOn ":copyUI"
-    build.dependsOn ":ui:build"
+group = "nzhengs"
+version = "0.0.1-SNAPSHOT"
+sourceCompatibility = "12"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa"
+    implementation "org.springframework.boot:spring-boot-starter-web"
+    runtimeOnly "com.h2database:h2"
+    testImplementation "org.springframework.boot:spring-boot-starter-test"
 }
 
 task copyUI(type: Copy) {
     from "ui/build"
-    into "api/build/resources/main/static"
+    into "build/resources/main/static"
 }
 
 copyUI.dependsOn ":ui:assemble"
+processResources.dependsOn ":copyUI"
+build.dependsOn ":ui:build"
