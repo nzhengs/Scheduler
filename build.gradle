@@ -1,0 +1,17 @@
+project(":api") {
+    apply plugin: "java"
+
+    dependencies {
+        runtimeOnly(project(":ui"))
+    }
+
+    processResources.dependsOn ":copyUI"
+    build.dependsOn ":ui:build"
+}
+
+task copyUI(type: Copy) {
+    from "ui/build"
+    into "api/build/resources/main/static"
+}
+
+copyUI.dependsOn ":ui:assemble"
