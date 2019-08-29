@@ -1,5 +1,5 @@
 plugins {
-    id "org.springframework.boot" version "2.1.6.RELEASE"
+    id "org.springframework.boot" version "2.1.7.RELEASE"
     id "java"
 }
 
@@ -17,6 +17,9 @@ dependencies {
     runtimeOnly project(":ui")
     implementation "org.springframework.boot:spring-boot-starter-data-jpa"
     implementation "org.springframework.boot:spring-boot-starter-web"
+    implementation "org.springframework.boot:spring-boot-starter-security"
+
     runtimeOnly "com.h2database:h2"
     testImplementation "org.springframework.boot:spring-boot-starter-test"
+    testImplementation "org.springframework.security:spring-security-test"
 }
