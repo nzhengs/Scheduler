@@ -10,6 +10,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faAddressBook, faCalendarAlt} from "@fortawesome/free-solid-svg-icons";
 import {faCalculator} from "@fortawesome/free-solid-svg-icons/faCalculator";
 import Footer from "../../components/Footer/Footer";
+import AddEmployees from "../AddEmployees/AddEmployees";
+import { Link } from 'react-router-dom'
 
 function HomePage() {
     return (
@@ -24,7 +26,9 @@ function HomePage() {
                 <Row>
                     <Col className="text-center">
                         <Card className="functionality-description border-0">
+                            <Link to="/employees/add" >
                             <FontAwesomeIcon icon={faAddressBook} size="6x"/>
+                            </Link>
                             <Card.Body>
                                 <Card.Title>Record Employee</Card.Title>
                                 <Card.Text>

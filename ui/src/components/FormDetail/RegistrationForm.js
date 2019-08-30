@@ -3,7 +3,8 @@ import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import "./RegistrationForm.css"
+import { Link } from 'react-router-dom'
+import "./RegistrationForm.css";
 
 function FormDetail() {
     const defaultEmployee = {
@@ -177,10 +178,11 @@ function FormDetail() {
                     </Form.Group>
                 </Form.Row>
 
-
-                <Button variant="secondary" type="submit" className={"float-right"}>
+                <Link to="/employees">
+                <Button variant="secondary" type="submit" className={"float-right"} >
                     Submit
                 </Button>
+                </Link>
             </Form>
         </Container>
     );
