@@ -23,7 +23,7 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <a href="/Profile" className="nav-link">
+                        <a href="/" className="nav-link">
                             Profile
                         </a>
                     </li>

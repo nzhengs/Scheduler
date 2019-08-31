@@ -3,6 +3,9 @@ import Table from "react-bootstrap/Table";
 import "./EmployeeList.css"
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
+import {Link} from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 
 
 function EmployeeList() {
@@ -27,6 +30,7 @@ function EmployeeList() {
                     Employees Information Detail
             </Card.Header>
             </Card>
+
             <Table striped bordered hover className="form-font">
                 <thead onClick={populateEmployees}>
                 <tr>
@@ -66,6 +70,11 @@ function EmployeeList() {
 
                 </tbody>
             </Table>
+            <Link to="/employees/add">
+                <Button variant="secondary" className={"float-right"} >
+                    Add more
+                </Button>
+            </Link>
         </Container>
     )
 
