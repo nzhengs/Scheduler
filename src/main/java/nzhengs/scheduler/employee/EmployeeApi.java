@@ -23,17 +23,17 @@ public class EmployeeApi {
     private final EmployeeRepo employeeRepo;
 
     @GetMapping
-    List<Employee> getEmployees() {
+    public List<Employee> getEmployees() {
         return employeeRepo.findAll();
     }
 
     @PostMapping
-    Employee createEmployee(@RequestBody Employee employee) {
+    public Employee createEmployee(@RequestBody Employee employee) {
         return employeeRepo.save(employee);
     }
 
     @PutMapping(path = "/{id}")
-    Employee updateEmployee(@PathVariable Long id, @RequestBody Employee employee) {
+    public Employee updateEmployee(@PathVariable Long id, @RequestBody Employee employee) {
         employee.setId(id);
         return employeeRepo.save(employee);
     }
