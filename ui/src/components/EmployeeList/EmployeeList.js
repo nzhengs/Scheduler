@@ -16,7 +16,7 @@ function EmployeeList() {
     useEffect(populateEmployees, []);
 
     function populateEmployees() {
-        const url = "http://localhost:8080/employees";
+        const url = "/api/employees";
         fetch(url)
             .then(res => res.json())
             .then(employees => setEmployees(employees));

@@ -38,7 +38,7 @@ function FormDetail() {
     const onFormSubmit = (e) => {
         e.preventDefault();
         console.log(employee);
-        const url = "http://localhost:8080/employees";
+        const url = "/api/employees";
         fetch(url, {
             method: "POST",
             body: JSON.stringify(employee),
