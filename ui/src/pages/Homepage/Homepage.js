@@ -1,7 +1,6 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../components/navbar/Navbar";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -32,14 +31,14 @@ function HomePage() {
                             <Card.Body>
                                 <Card.Title>Record Employee</Card.Title>
                                 <Card.Text>
-                                  Record the information about your Employees
+                                    Record the information about your Employees
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
                     <Col/>
                     <Col className="text-center">
-                        <Card className="functionality-description border-0" >
+                        <Card className="functionality-description border-0">
                             <FontAwesomeIcon icon={faCalendarAlt} size="6x"/>
                             <Card.Body>
                                 <Card.Title>Manage Schedule</Card.Title>
@@ -52,10 +51,10 @@ function HomePage() {
                 </Row>
                 <Row>
                     <Col/>
-                    <Col className="text-center" >
+                    <Col className="text-center">
                         <Card className="functionality-description border-0">
 
-                                <FontAwesomeIcon icon={faCalculator} size="6x" color="##295a81"/>
+                            <FontAwesomeIcon icon={faCalculator} size="6x" color="##295a81"/>
 
                             <Card.Body>
                                 <Card.Title>Calculate Salary</Card.Title>
