@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../../components/navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
@@ -9,8 +9,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faAddressBook, faCalendarAlt} from "@fortawesome/free-solid-svg-icons";
 import {faCalculator} from "@fortawesome/free-solid-svg-icons/faCalculator";
 import Footer from "../../components/Footer/Footer";
-import AddEmployees from "../AddEmployees/AddEmployees";
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 function HomePage() {
     return (
@@ -25,8 +24,8 @@ function HomePage() {
                 <Row>
                     <Col className="text-center">
                         <Card className="functionality-description border-0">
-                            <Link to="/employees/add" >
-                            <FontAwesomeIcon icon={faAddressBook} size="6x"/>
+                            <Link to="/employees/add">
+                                <FontAwesomeIcon icon={faAddressBook} size="6x"/>
                             </Link>
                             <Card.Body>
                                 <Card.Title>Record Employee</Card.Title>

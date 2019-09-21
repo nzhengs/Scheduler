@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../../components/navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import RegistrationForm from "../../components/FormDetail/RegistrationForm";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Footer from "../../components/Footer/Footer";

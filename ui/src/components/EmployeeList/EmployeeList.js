@@ -1,15 +1,12 @@
-import React, {useState, useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import Table from "react-bootstrap/Table";
 import "./EmployeeList.css"
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import {Link} from "react-router-dom";
 import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-
 
 function EmployeeList() {
-
 
     const [employees, setEmployees] = useState([]);
 
@@ -28,7 +25,7 @@ function EmployeeList() {
             <Card>
                 <Card.Header className="text-center">
                     Employees Information Detail
-            </Card.Header>
+                </Card.Header>
             </Card>
 
             <Table striped bordered hover className="form-font">
@@ -71,7 +68,7 @@ function EmployeeList() {
                 </tbody>
             </Table>
             <Link to="/employees/add">
-                <Button variant="secondary" className={"float-right"} >
+                <Button variant="secondary" className={"float-right"}>
                     Add more
                 </Button>
             </Link>

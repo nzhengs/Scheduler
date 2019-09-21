@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../../components/navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import EmployeeList from "../../components/EmployeeList/EmployeeList";
 import Footer from "../../components/Footer/Footer";
 import {Jumbotron} from "react-bootstrap";
