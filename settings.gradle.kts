@@ -1,2 +1,2 @@
 rootProject.name = "scheduler"
-include "ui"
+include("ui")
